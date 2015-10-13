@@ -1,6 +1,6 @@
 var census = require('citysdk')(YOUR_API_KEY_HERE),
-    async = require('async'),
-    fs    = require('fs');
+    async  = require('async'),
+    fs     = require('fs');
 
 // run counties_of_missouri.js to get this file
 var data = require('./counties_of_missouri.json');
