@@ -32,7 +32,7 @@ function processCounty(county, callback) {
     response = JSON.stringify(response, null, 2);
     fileName = county.base_name.replace(' ', '_').replace('.', '').toLowerCase();
 
-    fs.writeFile('./maps_of_missouri/counties/'+fileName+'.json', response, function(err) {
+    fs.writeFile('./counties/'+fileName+'.json', response, function(err) {
       callback(null);
     });   
   });
